@@ -28,6 +28,11 @@ Statistical tests use data from samples to assess, or make inferences about, a s
 * &alpha; = probability of a Type I error, known as a "false positive".  &alpha; is also known as the **significance level**.
 * 1 - &alpha; = probability of a "true negative", i.e., correctly not rejecting the null hypothesis
 
+|  | Null hypothesis is True | Null hypothesis is False |
+| --- | --- | --- |
+| **Result: don't reject null hypothesis** | Correct inference<br/> (true negative)<br/> (probability = 1−&alpha;) | Type II error<br/> (false negative)<br/> (probability = &beta;) |
+| **Result: reject null hypothesis** | Type I error<br/> (false positive)<br/> (probability = &alpha;)  | Correct inference<br/> (true positive)<br/> (probability = 1−&beta;) |
+
 ### p-value
 * In NHST, the [p-value](https://en.wikipedia.org/wiki/P-value) is the probability of obtaining test results at least as extreme as the results actually observed, **under the assumption that the null hypothesis is correct**.
   * The assumption on the null hypothesis is important!
@@ -38,12 +43,6 @@ In statistical hypothesis testing,
 
 * A **type I error** is the mistaken rejection of an actually true null hypothesis (also known as a "false positive" finding or conclusion; example: "an innocent person is convicted")
 * A **type II error** is the mistaken acceptance of an actually false null hypothesis (also known as a "false negative" finding or conclusion; example: "a guilty person is not convicted").
-
-
-|  | Null hypothesis is True | Null hypothesis is False |
-| --- | --- | --- |
-| **Result: don't reject null hypothesis** | Correct inference, (true negative), (probability = 1−&alpha;) | Type II error, (false negative), (probability = &beta;) |
-| **Result: reject null hypothesis** | Type I error, (false positive), (probability = &alpha;)  | Correct inference, (true positive), (probability = 1−&beta;) |
 
 ### Power
 The statistical **power** of a binary hypothesis test is the probability that the test correctly rejects the null hypothesis when a specific alternative hypothesis is true. It is commonly denoted by 1- &beta; , and represents the chances of a "true positive" detection conditional on the actual existence of an effect to detect.
