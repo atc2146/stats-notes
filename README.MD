@@ -5,6 +5,7 @@ Notes and references for Statistics. Taken from various places on the internet.
 ## Table of Contents
 
 * [Overview](#overview)
+* [Bayes Theorem](#bayes-theorem)
 * [Null Hypothesis Significance Testing (NHST)](#null-hypothesis-significance-testing-nhst)
   * [Notation](#notation)
   * [p-value](#p-value)
@@ -13,9 +14,12 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
 * [Central Limit Theorem](#central-limit-theorem)
 * [Multiple Comparisons](#multiple-comparisons)
+* [Online Controlled Experiments](#online-controlled-experiments)
 * [References](#references)
 
 ## Overview
+
+## Bayes Theorem
 
 ## Null Hypothesis Significance Testing (NHST)
 
@@ -27,6 +31,8 @@ Statistical tests use data from samples to assess, or make inferences about, a s
 * 1 - &beta; = probability of a "true positive", i.e., correctly rejecting the null hypothesis. "1 - &beta;" is also known as the **power of the test**.
 * &alpha; = probability of a Type I error, known as a "false positive".  &alpha; is also known as the **significance level**.
 * 1 - &alpha; = probability of a "true negative", i.e., correctly not rejecting the null hypothesis
+
+Here's a summary table:
 
 |  | Null hypothesis is True | Null hypothesis is False |
 | --- | --- | --- |
@@ -71,7 +77,15 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ## Multiple Comparisons
 
-## Variances
+## Online Controlled Experiments
+
+### Variance Reduction Techniques
+
+#### CUPED
+
+CONRAD (Doordash)
+
+#### Stratification
 
 ## References
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
