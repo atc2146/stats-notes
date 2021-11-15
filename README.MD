@@ -34,6 +34,16 @@ Statistical tests use data from samples to assess, or make inferences about, a s
   * A very small p-value means that such an extreme observed outcome would be very unlikely under the null hypothesis.
 
 ### Type I and Type II Errors
+In statistical hypothesis testing,
+
+* A **type I error** is the mistaken rejection of an actually true null hypothesis (also known as a "false positive" finding or conclusion; example: "an innocent person is convicted")
+* A **type II error** is the mistaken acceptance of an actually false null hypothesis (also known as a "false negative" finding or conclusion; example: "a guilty person is not convicted").
+
+
+|  | Null hypothesis is True | Null hypothesis is False |
+| --- | --- | --- |
+| **Result: don't reject null hypothesis** | Correct inference, (true negative), (probability = 1−&alpha;) | Type II error, (false negative), (probability = &beta;) |
+| **Result: reject null hypothesis** | Type I error, (false positive), (probability = &alpha;)  | Correct inference, (true positive), (probability = 1−&beta;) |
 
 ### Power
 The statistical **power** of a binary hypothesis test is the probability that the test correctly rejects the null hypothesis when a specific alternative hypothesis is true. It is commonly denoted by 1- &beta; , and represents the chances of a "true positive" detection conditional on the actual existence of an effect to detect.
@@ -66,5 +76,6 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ## References
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
-*[Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
+* [Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
+* [Wikipedia: Type I and type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 * [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
