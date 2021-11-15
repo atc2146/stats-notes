@@ -81,6 +81,12 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ## Linear Regression
 
+The assumptions of linear regression:
+* blah
+
+Why use least squares as the loss (cost) function?
+* Blah
+* Blah
 
 ## Online Controlled Experiments
 
@@ -89,11 +95,12 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 #### CUPED
 
 CONRAD (Doordash)
-
+VWE (Facebook)
 #### Stratification
 
 ## References
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
 * [Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
 * [Wikipedia: Type I and type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
+* [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
