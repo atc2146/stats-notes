@@ -14,6 +14,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
 * [Central Limit Theorem](#central-limit-theorem)
 * [Multiple Comparisons](#multiple-comparisons)
+* [Linear Regression](#linear-regression)
 * [Online Controlled Experiments](#online-controlled-experiments)
 * [References](#references)
 
@@ -75,7 +76,11 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 ## Central Limit Theorem
 
 
+
 ## Multiple Comparisons
+
+## Linear Regression
+
 
 ## Online Controlled Experiments
 
