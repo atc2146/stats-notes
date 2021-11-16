@@ -13,9 +13,13 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Power](#power)
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
 * [Central Limit Theorem](#central-limit-theorem)
+  * [Standard Error of the Mean](#standard-error-of-the-mean)
 * [Multiple Comparisons](#multiple-comparisons)
 * [Linear Regression](#linear-regression)
 * [Online Controlled Experiments](#online-controlled-experiments)
+  * [Variance Reduction Techniques](#variance-reduction-techniques)
+* [ANOVA](#anova)
+* [Other](#other)
 * [References](#references)
 
 ## Overview
