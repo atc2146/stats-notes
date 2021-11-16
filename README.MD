@@ -75,6 +75,15 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ## Central Limit Theorem
 
+* In probability theory, the central limit theorem (CLT) establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution (informally a bell curve) even if the original variables themselves are not normally distributed.
+* In other words, the sampling distribution of the sample mean of **any (most)** distribution very closely approximates the normal distribution as n approaches infinity (n is the sample size).
+  * In fact, the sampling distribution of the sample sum (or any statistic like the mode, etc.) is also normally distributed.
+
+### Standard Error of the Mean
+* The variance of the sampling distribution of the sample mean is (the variance of the original distribution) / n
+* Note: a larger n (sample size) leads to a lower standard error of the mean (standard deviation of the sampling distribution of the sample mean).  The variance is inversely proportion to n.
+
+
 
 
 ## Multiple Comparisons
@@ -82,21 +91,27 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 ## Linear Regression
 
 The assumptions of linear regression:
-* blah
+* Text
 
 Why use least squares as the loss (cost) function?
-* Blah
-* Blah
+* Text
+* Text
+
+## ANOVA
+* Looks to see if there is a difference between 3 or more means.  However, this is not really used in online controlled experimentation as we need to compare pairs of cohorts.
 
 ## Online Controlled Experiments
 
 ### Variance Reduction Techniques
 
 #### CUPED
+* CONRAD (Doordash)
+* VWE (Facebook)
 
-CONRAD (Doordash)
-VWE (Facebook)
 #### Stratification
+
+## Other
+* Positive skew has long right tail.
 
 ## References
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
