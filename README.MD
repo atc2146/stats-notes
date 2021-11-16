@@ -1,4 +1,4 @@
-# Stats Notes
+# Statistics Notes
 
 Notes and references for Statistics. Taken from various places on the internet.
 
@@ -11,9 +11,12 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [p-value](#p-value)
   * [Type I and Type II Errors](#type-i-and-type-ii-errors)
   * [Power](#power)
+  * [Confidence Intervals](#confidence-intervals)
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
 * [Central Limit Theorem](#central-limit-theorem)
   * [Standard Error of the Mean](#standard-error-of-the-mean)
+* [Distributions](#distributions)
+  * [Normal Distribution](#normal-distribution)
 * [Multiple Comparisons](#multiple-comparisons)
 * [Linear Regression](#linear-regression)
 * [Online Controlled Experiments](#online-controlled-experiments)
@@ -68,6 +71,10 @@ At a minimum, power nearly always depends on the following three factors:
 * The sample size used to detect the effect.
   * The sample size determines the amount of sampling error inherent in a test result. Other things being equal, effects are harder to detect in smaller samples. Increasing sample size is often the easiest way to boost the statistical power of a test.
 
+### Confidence Intervals
+
+
+
 ### T-statistic vs Z-statistic
 
 The choice in using a z-statistic  versus a t-statistic has to do with whether or not you are using a known population standard deviation or whether you are estimating it using the standard deviation calculated from the sample.
@@ -77,6 +84,7 @@ If you are using a sample standard deviation to calculate the standard error (es
 However, as the samples gets large (n > 30), the difference between the z-statistic and t-statistic gets increasingly small.  This is because the standard deviation estimator comes [very close](https://stats.stackexchange.com/questions/61284/t-tests-vs-z-tests) to the true standard deviation.
 
 
+
 ## Central Limit Theorem
 
 * In probability theory, the central limit theorem (CLT) establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution (informally a bell curve) even if the original variables themselves are not normally distributed.
@@ -84,11 +92,17 @@ However, as the samples gets large (n > 30), the difference between the z-statis
   * In fact, the sampling distribution of the sample sum (or any statistic like the mode, etc.) is also normally distributed.
 
 ### Standard Error of the Mean
-* The variance of the sampling distribution of the sample mean is (the variance of the original distribution) / n
-* Note: a larger n (sample size) leads to a lower standard error of the mean (standard deviation of the sampling distribution of the sample mean).  The variance is inversely proportion to n.
+* The variance of the sampling distribution of the sample mean equals (the variance of the original distribution) / n
+* *Note*: a larger n (sample size) leads to a lower standard error of the mean (standard deviation of the sampling distribution of the sample mean).  The variance is inversely proportion to n.
 
+## Distributions
 
+### Normal Distribution
 
+* The **normal** distribution, or **Gaussian** distribution, is a type of continuous probability distribution for a real-valued random variable.
+* The normal distribution is completely characterized by its mean and its standard deviation.
+* Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem.
+* A good rule of time is the 68-95-99.7 rule in that respectively 68%, 95%, and 99.7% of observations will fall within 1, 2, and 3 standard deviations from the mean.
 
 ## Multiple Comparisons
 
@@ -116,10 +130,12 @@ Why use least squares as the loss (cost) function?
 
 ## Other
 * Positive skew has long right tail.
+* Parameter is a number that describes the data from a population while a statistic is a number that describes the data from a sample.
 
 ## References
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
 * [Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
 * [Wikipedia: Type I and type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 * [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
+* [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 * [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
