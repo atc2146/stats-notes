@@ -22,6 +22,7 @@ Notes and references for Statistics. Taken from various places on the internet.
 * [Multiple Comparisons](#multiple-comparisons)
 * [Linear Regression](#linear-regression)
 * [Logistic Regression](#logistic-regression)
+* [Trees](#trees)
 * [Online Controlled Experiments](#online-controlled-experiments)
   * [Variance Reduction Techniques](#variance-reduction-techniques)
 * [Chi-squared test](#chi-squared-test)
@@ -32,12 +33,13 @@ Notes and references for Statistics. Taken from various places on the internet.
 
 ## Fundamentals
 * Variance is a measure of spread:
-  * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1)
+  * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1).
   * Standard deviation is just the square root of variance.
 
-
-
 ## Bayes Theorem
+* 
+
+
 
 ## Null Hypothesis Significance Testing (NHST)
 
@@ -148,12 +150,14 @@ Why use least squares as the loss (cost) function?
 
 ## Logistic Regression
 
+## Trees 
+
 ## Chi-squared test
 *  Pearson's chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. Used for counts.
 
 Similarly, (One-way) ANOVA is used to investigate whether differences in means (for 3 or more cohorts) between samples are significant or not.  We use the F statistic.
 
-However, these are not really used in online controlled experimentation as we need to compare pairs of cohorts.
+However, these are not really used in online controlled experimentation as we generally need to compare pairs of cohorts.
 
 ## Online Controlled Experiments
 
@@ -172,7 +176,8 @@ However, these are not really used in online controlled experimentation as we ne
 * Positive skew has long right tail.
 * Parameter is a number that describes the data from a population while a statistic is a number that describes the data from a sample.
 * Statistical and Practical Significance: Statistical significance is concerned with whether an observed effect is due to chance and practical significance means that the observed effect is large enough to be useful in the real world.
-* The covariance is simply a measure of the variance of two variables
+* The covariance is simply a measure of the variance of two variables - how one moves in relation to the other.
+
 ## References
 * [Wikipedia: Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
