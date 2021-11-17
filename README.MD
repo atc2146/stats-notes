@@ -5,6 +5,7 @@ Notes and references for Statistics. Taken from various places on the internet.
 ## Table of Contents
 
 * [Overview](#overview)
+* [Fundamentals](#fundamentals)
 * [Bayes Theorem](#bayes-theorem)
 * [Null Hypothesis Significance Testing (NHST)](#null-hypothesis-significance-testing-nhst)
   * [Notation](#notation)
@@ -17,15 +18,24 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Standard Error of the Mean](#standard-error-of-the-mean)
 * [Distributions](#distributions)
   * [Normal Distribution](#normal-distribution)
+  * [Bernoulli Distribution](#bernoulli-distribution)
 * [Multiple Comparisons](#multiple-comparisons)
 * [Linear Regression](#linear-regression)
+* [Logistic Regression](#logistic-regression)
 * [Online Controlled Experiments](#online-controlled-experiments)
   * [Variance Reduction Techniques](#variance-reduction-techniques)
-* [ANOVA](#anova)
+* [Chi-squared test](#chi-squared-test)
 * [Other](#other)
 * [References](#references)
 
 ## Overview
+
+## Fundamentals
+* Variance is a measure of spread:
+  * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1)
+  * Standard deviation is just the square root of variance.
+
+
 
 ## Bayes Theorem
 
@@ -73,6 +83,11 @@ At a minimum, power nearly always depends on the following three factors:
 
 ### Confidence Intervals
 
+* General form of a confidence interval: `sample statistic +- margin of error`.
+  * General form of margin of error: `Multiplier * Standard Error(Estimate)`.
+*  Increasing the confidence level of a confidence interval will only result in larger intervals.
+* Interpretation: If we repeatedly draw random samples of size n from the population and calculate the confidence interval each time, we would expect that 100(1-&alpha;)% of the intervals would contain the true parameter.
+  * For a **given** CI, either the true parameter is in it or it is not!
 
 
 ### T-statistic vs Z-statistic
@@ -83,6 +98,13 @@ If you are using a sample standard deviation to calculate the standard error (es
 
 However, as the samples gets large (n > 30), the difference between the z-statistic and t-statistic gets increasingly small.  This is because the standard deviation estimator comes [very close](https://stats.stackexchange.com/questions/61284/t-tests-vs-z-tests) to the true standard deviation.
 
+### Hypothesis Testing for Two-Sample Means
+* Independent Sample or Dependent Sample?
+  * Independent: The samples from two populations are independent if the samples selected from one of the populations have no relationship with the samples selected from the other population.
+  * Dependent: The samples are dependent (also called paired data) if each measurement in one sample is matched or paired with a particular measurement in the other sample. Another way to consider this is how many measurements are taken off of each subject. If only one measurement, then independent; if two measurements, then paired.
+
+* Pooled or Unpooled Variance for sample variance calculation?
+  * The consequence of using unpooled is that the test is more conservative making it marginally more difficult to reject the null. However, the consequence of using pooled variances is an incorrect model. 
 
 
 ## Central Limit Theorem
@@ -103,6 +125,15 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 * The normal distribution is completely characterized by its mean and its standard deviation.
 * Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem.
 * A good rule of time is the 68-95-99.7 rule in that respectively 68%, 95%, and 99.7% of observations will fall within 1, 2, and 3 standard deviations from the mean.
+* We can convert any normal distribution into the standard normal distribution in order to find probability and apply the properties of the standard normal. In order to do this, we use the z-value.
+  * The Z-value (or sometimes referred to as Z-score or simply Z) represents the number of standard deviations an observation is from the mean for a set of data. To find the z-score for a particular observation we apply the following formula: `(observed value - mean) / SD`
+
+### Bernoulli Distribution
+
+* The **Bernoulli distribution** is the discrete probability distribution of a random variable which takes the value 1 with probability p and the value 0 with probability q=1-p.
+* Mean and Standard Deviation [Standard Error] of the Sample Proportion:
+  * The sample mean is just the proportion of successes.
+  * The variance of the sample proportion is `p(1-p)/n`
 
 ## Multiple Comparisons
 
@@ -115,10 +146,19 @@ Why use least squares as the loss (cost) function?
 * Text
 * Text
 
-## ANOVA
-* Looks to see if there is a difference between 3 or more means.  However, this is not really used in online controlled experimentation as we need to compare pairs of cohorts.
+## Logistic Regression
+
+## Chi-squared test
+*  Pearson's chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. Used for counts.
+
+Similarly, (One-way) ANOVA is used to investigate whether differences in means (for 3 or more cohorts) between samples are significant or not.  We use the F statistic.
+
+However, these are not really used in online controlled experimentation as we need to compare pairs of cohorts.
 
 ## Online Controlled Experiments
+
+* **Observational** study is where observations or measurements area analyzed without manipulating any variables. These studies show that there may be a relationship but not necessarily a cause and effect relationship. 
+* **Experimental** study involves some random assignment* of a treatment; researchers can draw cause and effect (or causal) conclusions.
 
 ### Variance Reduction Techniques
 
@@ -131,11 +171,14 @@ Why use least squares as the loss (cost) function?
 ## Other
 * Positive skew has long right tail.
 * Parameter is a number that describes the data from a population while a statistic is a number that describes the data from a sample.
-
+* Statistical and Practical Significance: Statistical significance is concerned with whether an observed effect is due to chance and practical significance means that the observed effect is large enough to be useful in the real world.
+* The covariance is simply a measure of the variance of two variables
 ## References
+* [Wikipedia: Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
 * [Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
 * [Wikipedia: Type I and type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 * [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 * [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
+* [PSU: STAT 800](https://online.stat.psu.edu/stat800/)
