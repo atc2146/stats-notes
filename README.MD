@@ -167,7 +167,7 @@ However, these are not really used in online controlled experimentation as we ge
 ### Variance Reduction Techniques
 
 #### CUPED
-* CONRAD (Doordash)
+* CUPAC (Doordash)
 * VWE (Facebook)
 
 #### Stratification
