@@ -32,12 +32,16 @@ Notes and references for Statistics. Taken from various places on the internet.
 ## Overview
 
 ## Fundamentals
-* Variance is a measure of spread:
+* Variance is a measure of spread.
   * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1).
   * Standard deviation is just the square root of variance.
 
 ## Bayes Theorem
-* 
+* Bayes Theorem describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
+* Mathematically, `P(A|B) = (P(B|A) * P(A)) / P(B)`
+  * `P(A|B)` is a conditional probability: the probability of event A occurring given that B is true. It is also called the posterior probability of A given B.
+  * `P(B|A)` is a conditional probability: the probability of event B occurring given that A is true.
+  * `P(A)` and `P(B)` are the probabilities of observing A and B respectively without any given conditions; they are known as the marginal probability or prior probability.
 
 
 
