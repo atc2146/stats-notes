@@ -116,7 +116,7 @@ However, as the samples gets large (n > 30), the difference between the z-statis
   * In fact, the sampling distribution of the sample sum (or any statistic like the mode, etc.) is also normally distributed.
 
 ### Standard Error of the Mean
-* The variance of the sampling distribution of the sample mean equals (the variance of the original distribution) / n
+* The variance of the sampling distribution of the sample mean equals `(the variance of the original distribution) / n`
 * *Note*: a larger n (sample size) leads to a lower standard error of the mean (standard deviation of the sampling distribution of the sample mean).  The variance is inversely proportion to n.
 
 ## Distributions
@@ -132,7 +132,7 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ### Bernoulli Distribution
 
-* The **Bernoulli distribution** is the discrete probability distribution of a random variable which takes the value 1 with probability p and the value 0 with probability q=1-p.
+* The **Bernoulli distribution** is the discrete probability distribution of a random variable which takes the value 1 with probability `p` and the value 0 with probability `q=1-p`.
 * Mean and Standard Deviation [Standard Error] of the Sample Proportion:
   * The sample mean is just the proportion of successes.
   * The variance of the sample proportion is `p(1-p)/n`
