@@ -20,6 +20,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Normal Distribution](#normal-distribution)
   * [Bernoulli Distribution](#bernoulli-distribution)
 * [Multiple Comparisons](#multiple-comparisons)
+* [Machine Learning](#machine-learning)
 * [Linear Regression](#linear-regression)
 * [Logistic Regression](#logistic-regression)
 * [Trees](#trees)
@@ -142,6 +143,8 @@ However, as the samples gets large (n > 30), the difference between the z-statis
   * The variance of the sample proportion is `p(1-p)/n`
 
 ## Multiple Comparisons
+
+## Machine Learning
 
 ## Linear Regression
 
