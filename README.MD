@@ -181,6 +181,9 @@ However, these are not really used in online controlled experimentation as we ge
 
 ## Other
 * Positive skew has long right tail.
+
+![skew](https://upload.wikimedia.org/wikipedia/commons/c/cc/Relationship_between_mean_and_median_under_different_skewness.png)
+
 * Parameter is a number that describes the data from a population while a statistic is a number that describes the data from a sample.
 * Statistical and Practical Significance: Statistical significance is concerned with whether an observed effect is due to chance and practical significance means that the observed effect is large enough to be useful in the real world.
 * The covariance is simply a measure of the variance of two variables - how one moves in relation to the other.
