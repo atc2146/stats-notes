@@ -111,6 +111,7 @@ However, as the samples gets large (n > 30), the difference between the z-statis
   * Dependent: The samples are dependent (also called paired data) if each measurement in one sample is matched or paired with a particular measurement in the other sample. Another way to consider this is how many measurements are taken off of each subject. If only one measurement, then independent; if two measurements, then paired.
 
 * Pooled or Unpooled Variance for sample variance calculation?
+  * There are two versions of this test, one is used when the variances of the two populations are equal (the pooled test) and the other one is used when the variances of the two populations are unequal (the unpooled test).
   * The consequence of using unpooled is that the test is more conservative making it marginally more difficult to reject the null. However, the consequence of using pooled variances is an incorrect model. 
 
 
@@ -131,13 +132,13 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 * The **normal** distribution, or **Gaussian** distribution, is a type of continuous probability distribution for a real-valued random variable.
 * The normal distribution is completely characterized by its mean and its standard deviation.
 * Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem.
-* A good rule of time is the 68-95-99.7 rule in that respectively 68%, 95%, and 99.7% of observations will fall within 1, 2, and 3 standard deviations from the mean.
+* A good rule of thumb is the 68-95-99.7 rule in that respectively 68%, 95%, and 99.7% of observations will fall within 1, 2, and 3 standard deviations from the mean.
 * We can convert any normal distribution into the standard normal distribution in order to find probability and apply the properties of the standard normal. In order to do this, we use the z-value.
   * The Z-value (or sometimes referred to as Z-score or simply Z) represents the number of standard deviations an observation is from the mean for a set of data. To find the z-score for a particular observation we apply the following formula: `(observed value - mean) / SD`
 
 ### Bernoulli Distribution
 
-* The **Bernoulli distribution** is the discrete probability distribution of a random variable which takes the value 1 with probability `p` and the value 0 with probability `q=1-p`.
+* The **Bernoulli distribution** is the discrete probability distribution of a random variable which takes the value 1 with probability `p` and the value 0 with probability `q = 1 - p`.
 * Mean and Standard Deviation [Standard Error] of the Sample Proportion:
   * The sample mean is just the proportion of successes.
   * The variance of the sample proportion is `p(1-p)/n`
@@ -169,7 +170,7 @@ However, these are not really used in online controlled experimentation as we ge
 ## Online Controlled Experiments
 
 * **Observational** study is where observations or measurements area analyzed without manipulating any variables. These studies show that there may be a relationship but not necessarily a cause and effect relationship. 
-* **Experimental** study involves some random assignment* of a treatment; researchers can draw cause and effect (or causal) conclusions.
+* **Experimental** study involves some random assignment of a treatment; researchers can draw cause and effect (or causal) conclusions.
 
 ### Variance Reduction Techniques
 
