@@ -52,7 +52,7 @@ Statistical tests use data from samples to assess, or make inferences about, a s
 
 ### Notation
 
-* &beta; = probability of a Type II error, known as a "false negative"
+* &beta; = probability of a Type II error, known as a "false negative".
 * 1 - &beta; = probability of a "true positive", i.e., correctly rejecting the null hypothesis. "1 - &beta;" is also known as the **power of the test**.
 * &alpha; = probability of a Type I error, known as a "false positive".  &alpha; is also known as the **significance level**.
 * 1 - &alpha; = probability of a "true negative", i.e., correctly not rejecting the null hypothesis
@@ -82,7 +82,7 @@ Statistical power ranges from 0 to 1, and as the power of a test increases, the 
 
 At a minimum, power nearly always depends on the following three factors:
 
-* The statistical significance criterion used in the test.
+* The statistical significance criterion used in the test (&alpha;).
   * One easy way to increase the power of a test is to carry out a less conservative test by using a larger significance criterion, for example 0.10 instead of 0.05.  This increases the chance of rejecting the null hypothesis (obtaining a statistically significant result) when the null hypothesis is false; that is, it reduces the risk of a type II error (false negative regarding whether an effect exists). But it also increases the risk of obtaining a statistically significant result (rejecting the null hypothesis) when the null hypothesis is not false; that is, it increases the risk of a type I error (false positive).
 * The magnitude of the effect of interest in the population.
 * The sample size used to detect the effect.
