@@ -28,7 +28,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Variance Reduction Techniques](#variance-reduction-techniques)
 * [Chi-squared test](#chi-squared-test)
 * [Other](#other)
-  *[Bessel's correction](#Bessels-correction)
+  * [Bessel's correction](#Bessels-correction)
 * [References](#references)
 
 ## Overview
