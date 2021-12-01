@@ -28,6 +28,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Variance Reduction Techniques](#variance-reduction-techniques)
 * [Chi-squared test](#chi-squared-test)
 * [Other](#other)
+  *[Bessel's correction](#Bessels-correction)
 * [References](#references)
 
 ## Overview
@@ -35,6 +36,7 @@ Notes and references for Statistics. Taken from various places on the internet.
 ## Fundamentals
 * Variance is a measure of spread.
   * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1).
+      * Note, there is an alternative formulate where you do not need to calculate the mean.
   * Standard deviation is just the square root of variance.
 
 ## Bayes Theorem
@@ -189,6 +191,11 @@ However, these are not really used in online controlled experimentation as we ge
 * Statistical and Practical Significance: Statistical significance is concerned with whether an observed effect is due to chance and practical significance means that the observed effect is large enough to be useful in the real world.
 * The covariance is simply a measure of the variance of two variables - how one moves in relation to the other.
 
+### Bessel's correction
+In statistics, [Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction) is the use of `n − 1` instead of `n` in the formula for the sample variance and sample standard deviation, where `n` is the number of observations in a sample. This method corrects the bias in the estimation of the population variance. It also partially corrects the bias in the estimation of the population standard deviation. However, the correction often increases the mean squared error in these estimations. 
+
+The standard deviation calculated with a divisor of n−1 is a standard deviation calculated from the sample as an estimate of the standard deviation of the population from which the sample was drawn. Because the observed values fall, on average, closer to the sample mean than to the population mean, the standard deviation which is calculated using deviations from the sample mean underestimates the desired standard deviation of the population. Using `n − 1` instead of `n` as the divisor corrects for that by making the result a little bit bigger.
+
 ## References
 * [Wikipedia: Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
@@ -196,5 +203,7 @@ However, these are not really used in online controlled experimentation as we ge
 * [Wikipedia: Type I and type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 * [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+* [Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction)
 * [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
 * [PSU: STAT 800](https://online.stat.psu.edu/stat800/)
+* [Stackexchange: Intuitive explanation for dividing by n−1 when calculating standard deviation?](https://stats.stackexchange.com/questions/3931/intuitive-explanation-for-dividing-by-n-1-when-calculating-standard-deviation)
