@@ -6,6 +6,7 @@ Notes and references for Statistics. Taken from various places on the internet.
 
 * [Overview](#overview)
 * [Fundamentals](#fundamentals)
+  * [Law of Large Numbers](#law-of-large-numbers)
 * [Bayes Theorem](#bayes-theorem)
 * [Null Hypothesis Significance Testing (NHST)](#null-hypothesis-significance-testing-nhst)
   * [Notation](#notation)
@@ -38,6 +39,9 @@ Notes and references for Statistics. Taken from various places on the internet.
   * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1).
       * Note, there is an alternative formulate where you do not need to calculate the mean.
   * Standard deviation is just the square root of variance.
+
+### Law of Large Numbers
+
 
 ## Bayes Theorem
 * Bayes Theorem describes the probability of an event, based on prior knowledge of conditions that might be related to the event.
@@ -207,3 +211,4 @@ The standard deviation calculated with a divisor of n−1 is a standard deviatio
 * [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
 * [PSU: STAT 800](https://online.stat.psu.edu/stat800/)
 * [Stackexchange: Intuitive explanation for dividing by n−1 when calculating standard deviation?](https://stats.stackexchange.com/questions/3931/intuitive-explanation-for-dividing-by-n-1-when-calculating-standard-deviation)
+* [40 Stats Interviews Problems](https://towardsdatascience.com/40-statistics-interview-problems-and-answers-for-data-scientists-6971a02b7eee)
