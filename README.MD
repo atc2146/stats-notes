@@ -37,8 +37,8 @@ Notes and references for Statistics. Taken from various places on the internet.
 ## Fundamentals
 * Variance is a measure of spread.
   * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1).
-      * Note, there is an alternative formulate where you do not need to calculate the mean.
-  * Standard deviation is just the square root of variance.
+      * Note, there is an [alternative formula](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance) where you do not need to calculate the mean.
+  * Standard deviation is the square root of variance.
 
 ### Law of Large Numbers
 
@@ -212,3 +212,4 @@ The standard deviation calculated with a divisor of n−1 is a standard deviatio
 * [PSU: STAT 800](https://online.stat.psu.edu/stat800/)
 * [Stackexchange: Intuitive explanation for dividing by n−1 when calculating standard deviation?](https://stats.stackexchange.com/questions/3931/intuitive-explanation-for-dividing-by-n-1-when-calculating-standard-deviation)
 * [40 Stats Interviews Problems](https://towardsdatascience.com/40-statistics-interview-problems-and-answers-for-data-scientists-6971a02b7eee)
+* [Calculation of Variance: MOSSOM](https://www.mun.ca/biology/scarr/Simplified_calculation_of_variance.html)
