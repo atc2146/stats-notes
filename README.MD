@@ -186,6 +186,8 @@ However, these are not really used in online controlled experimentation as we ge
 
 #### Stratification
 
+#### Winsorization
+
 ## Other
 * Positive skew has long right tail.
 
