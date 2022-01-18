@@ -216,5 +216,4 @@ The standard deviation calculated with a divisor of n−1 is a standard deviatio
 * [40 Stats Interviews Problems](https://towardsdatascience.com/40-statistics-interview-problems-and-answers-for-data-scientists-6971a02b7eee)
 * [Calculation of Variance: MOSSOM](https://www.mun.ca/biology/scarr/Simplified_calculation_of_variance.html)
 * [Practical Statistics for Data Scientists: 50 Essential Concepts](https://www.oreilly.com/library/view/practical-statistics-for/9781491952955/)
-* []()
-* []()
+* [The Art of Statistics](https://www.goodreads.com/book/show/43722897-the-art-of-statistics)
