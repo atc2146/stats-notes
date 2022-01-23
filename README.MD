@@ -22,6 +22,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Bernoulli Distribution](#bernoulli-distribution)
 * [Multiple Comparisons](#multiple-comparisons)
 * [Machine Learning](#machine-learning)
+  * [L1 and L2 Norm](#l1-and-l2-norm)
 * [Linear Regression](#linear-regression)
 * [Logistic Regression](#logistic-regression)
 * [Trees](#trees)
@@ -152,6 +153,8 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 ## Multiple Comparisons
 
 ## Machine Learning
+
+### L1 and L2 Norm
 
 ## Linear Regression
 
