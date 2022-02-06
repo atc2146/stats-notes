@@ -23,12 +23,13 @@ Notes and references for Statistics. Taken from various places on the internet.
 * [Multiple Comparisons](#multiple-comparisons)
 * [Machine Learning](#machine-learning)
   * [L1 and L2 Norm](#l1-and-l2-norm)
-* [Linear Regression](#linear-regression)
-* [Logistic Regression](#logistic-regression)
-* [Trees](#trees)
+  * [Linear Regression](#linear-regression)
+  * [Logistic Regression](#logistic-regression)
+  * [Trees](#trees)
 * [Online Controlled Experiments](#online-controlled-experiments)
   * [Variance Reduction Techniques](#variance-reduction-techniques)
 * [Chi-squared test](#chi-squared-test)
+* [Fisher's Exact test](#fishers-exact-test)
 * [Other](#other)
   * [Bessel's correction](#Bessels-correction)
 * [References](#references)
@@ -156,7 +157,7 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ### L1 and L2 Norm
 
-## Linear Regression
+### Linear Regression
 
 The assumptions of linear regression:
 * Text
@@ -165,9 +166,9 @@ Why use least squares as the loss (cost) function?
 * Text
 * Text
 
-## Logistic Regression
+### Logistic Regression
 
-## Trees 
+### Trees 
 
 ## Chi-squared test
 *  Pearson's chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. Used for counts.
@@ -175,6 +176,9 @@ Why use least squares as the loss (cost) function?
 Similarly, (One-way) ANOVA is used to investigate whether differences in means (for 3 or more cohorts) between samples are significant or not.  We use the F statistic.
 
 However, these are not really used in online controlled experimentation as we generally need to compare pairs of cohorts.
+
+## Fisher's Exact Test
+
 
 ## Online Controlled Experiments
 
