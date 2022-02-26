@@ -14,6 +14,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Type I and Type II Errors](#type-i-and-type-ii-errors)
   * [Power](#power)
   * [Confidence Intervals](#confidence-intervals)
+  * [Prediction Intervals](#prediction-intervals)
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
 * [Central Limit Theorem](#central-limit-theorem)
   * [Standard Error of the Mean](#standard-error-of-the-mean)
@@ -104,6 +105,7 @@ At a minimum, power nearly always depends on the following three factors:
 * Interpretation: If we repeatedly draw random samples of size n from the population and calculate the confidence interval each time, we would expect that 100(1-&alpha;)% of the intervals would contain the true parameter.
   * For a **given** CI, either the true parameter is in it or it is not!
 
+### Prediction Intervals
 
 ### T-statistic vs Z-statistic
 
