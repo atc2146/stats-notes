@@ -10,8 +10,8 @@ Notes and references for Statistics. Taken from various places on the internet.
 * [Bayes Theorem](#bayes-theorem)
 * [Null Hypothesis Significance Testing (NHST)](#null-hypothesis-significance-testing-nhst)
   * [Notation](#notation)
-  * [p-value](#p-value)
   * [Type I and Type II Errors](#type-i-and-type-ii-errors)
+  * [p-value](#p-value)
   * [Power](#power)
   * [Confidence Intervals](#confidence-intervals)
   * [Prediction Intervals](#prediction-intervals)
@@ -62,8 +62,10 @@ Statistical tests use data from **samples** to assess, or make inferences about,
 ### Notation
 
 * &beta; = probability of a Type II error, known as a "false negative".
-* 1 - &beta; = probability of a "true positive", i.e., correctly rejecting the null hypothesis. "1 - &beta;" is also known as the **power of the test**.
-* &alpha; = probability of a Type I error, known as a "false positive".  &alpha; is also known as the **significance level**.
+* 1 - &beta; = probability of a "true positive", i.e., correctly rejecting the null hypothesis.
+    * "1 - &beta;" is also known as the **power of the test**.
+* &alpha; = probability of a Type I error, known as a "false positive".
+    * &alpha; is also known as the **significance level**.
 * 1 - &alpha; = probability of a "true negative", i.e., correctly not rejecting the null hypothesis
 
 Here's a summary table:
@@ -73,16 +75,20 @@ Here's a summary table:
 | **Result: don't reject null hypothesis** | Correct inference<br/> (true negative)<br/> (probability = 1−&alpha;) | Type II error<br/> (false negative)<br/> (probability = &beta;) |
 | **Result: reject null hypothesis** | Type I error<br/> (false positive)<br/> (probability = &alpha;)  | Correct inference<br/> (true positive)<br/> (probability = 1−&beta;) |
 
+### Type I and Type II Errors
+In statistical hypothesis testing,
+
+* A **Type I error** is the mistaken rejection of an actually true null hypothesis (also known as a "false positive" finding or conclusion)
+    * Example: "an innocent person is convicted")
+* A **Type II error** is the mistaken acceptance of an actually false null hypothesis (also known as a "false negative" finding or conclusion)
+    * Example: "a guilty person is not convicted").
+
+
 ### p-value
 * In NHST, the [p-value](https://en.wikipedia.org/wiki/P-value) is the probability of obtaining test results at least as extreme as the results actually observed, **under the assumption that the null hypothesis is correct**.
   * The assumption on the null hypothesis is important!
   * A very small p-value means that such an extreme observed outcome would be very unlikely under the null hypothesis.
 
-### Type I and Type II Errors
-In statistical hypothesis testing,
-
-* A **type I error** is the mistaken rejection of an actually true null hypothesis (also known as a "false positive" finding or conclusion; example: "an innocent person is convicted")
-* A **type II error** is the mistaken acceptance of an actually false null hypothesis (also known as a "false negative" finding or conclusion; example: "a guilty person is not convicted").
 
 ### Power
 The statistical **power** of a binary hypothesis test is the probability that the test correctly rejects the null hypothesis when a specific alternative hypothesis is true. It is commonly denoted by 1- &beta; , and represents the chances of a "true positive" detection conditional on the actual existence of an effect to detect.
