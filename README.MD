@@ -97,15 +97,15 @@ Statistical power ranges from 0 to 1, and as the power of a test increases, the 
 
 At a minimum, power nearly always depends on the following three factors:
 
-1. The statistical significance criterion used in the test (&alpha;).
+1. The **statistical significance criterion** used in the test (&alpha;).
    * One easy way to increase the power of a test is to carry out a less conservative test by using a larger significance criterion, for example 0.10 instead of 0.05.  This increases the chance of rejecting the null hypothesis (obtaining a statistically significant result) when the null hypothesis is false; that is, it reduces the risk of a type II error (false negative regarding whether an effect exists). But it also increases the risk of obtaining a statistically significant result (rejecting the null hypothesis) when the null hypothesis is not false; that is, it increases the risk of a type I error (false positive).
-2. The magnitude of the effect of interest in the population.
-3. The sample size used to detect the effect.
+2. The **magnitude of the effect** of interest in the population.
+3. The **sample size** used to detect the effect.
    * The sample size determines the amount of sampling error inherent in a test result. Other things being equal, effects are harder to detect in smaller samples. Increasing sample size is often the easiest way to boost the statistical power of a test.
 
 ### Confidence Intervals
 
-* General form of a confidence interval: `sample statistic +- margin of error`.
+* General form of a confidence interval: `(sample statistic) +- (margin of error)`.
   * General form of margin of error: `Multiplier * Standard Error(Estimate)`.
 *  Increasing the confidence level of a confidence interval will only result in larger intervals.
 * Interpretation: If we repeatedly draw random samples of size n from the population and calculate the confidence interval each time, we would expect that 100(1-&alpha;)% of the intervals would contain the true parameter.
