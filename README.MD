@@ -133,7 +133,7 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ## Central Limit Theorem
 
-* In probability theory, the central limit theorem (CLT) establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution (informally a bell curve) even if the original variables themselves are not normally distributed.
+* In probability theory, the Central Limit Theorem (CLT) establishes that, in many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution (informally a bell curve) even if the original variables themselves are not normally distributed.
 * In other words, the sampling distribution of the sample mean of **any (most)** distribution very closely approximates the normal distribution as n approaches infinity (n is the sample size).
   * In fact, the sampling distribution of the sample sum (or any statistic like the mode, etc.) is also normally distributed.
 
