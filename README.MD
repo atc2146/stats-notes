@@ -130,8 +130,8 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 * Pooled or Unpooled Variance for sample variance calculation?
   * There are two versions of this test, one is used when the variances of the two populations are equal (the pooled test) and the other one is used when the variances of the two populations are unequal (the unpooled test).
   * The consequence of using:
-    * The unpooled version is that the test is more conservative making it marginally more difficult to reject the null.
-    * However, the consequence of using pooled variances is an **incorrect** model. 
+    * The **unpooled version** is that the test is more conservative making it marginally more difficult to reject the null.
+    * The **pooled version** is a potentially **incorrect** model. 
 
 
 ## Central Limit Theorem
