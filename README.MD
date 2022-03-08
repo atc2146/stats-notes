@@ -16,6 +16,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Confidence Intervals](#confidence-intervals)
   * [Prediction Intervals](#prediction-intervals)
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
+  * [Hypothesis Testing for Two-Sample Means](hypothesis-testing-for-two-sample-means)
 * [Central Limit Theorem](#central-limit-theorem)
   * [Standard Error of the Mean](#standard-error-of-the-mean)
 * [Distributions](#distributions)
@@ -128,7 +129,9 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 * Pooled or Unpooled Variance for sample variance calculation?
   * There are two versions of this test, one is used when the variances of the two populations are equal (the pooled test) and the other one is used when the variances of the two populations are unequal (the unpooled test).
-  * The consequence of using unpooled is that the test is more conservative making it marginally more difficult to reject the null. However, the consequence of using pooled variances is an incorrect model. 
+  * The consequence of using:
+    * The unpooled version is that the test is more conservative making it marginally more difficult to reject the null.
+    * However, the consequence of using pooled variances is an **incorrect** model. 
 
 
 ## Central Limit Theorem
