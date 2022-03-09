@@ -152,7 +152,7 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 * The normal distribution is completely characterized by its mean and its standard deviation.
 * Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem.
 * A good rule of thumb is the 68-95-99.7 rule in that respectively 68%, 95%, and 99.7% of observations will fall within 1, 2, and 3 standard deviations from the mean.
-* We can convert any normal distribution into the standard normal distribution in order to find probability and apply the properties of the standard normal. In order to do this, we use the z-value.
+* We can convert any normal distribution into the **standard normal distribution** in order to find probability and apply the properties of the standard normal. In order to do this, we use the z-value.
   * The Z-value (or sometimes referred to as Z-score or simply Z) represents the number of standard deviations an observation is from the mean for a set of data. To find the z-score for a particular observation we apply the following formula: `(observed value - mean) / SD`
 
 ### Bernoulli Distribution
@@ -161,6 +161,7 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 * Mean and Standard Deviation [Standard Error] of the Sample Proportion:
   * The sample mean is just the proportion of successes.
   * The variance of the sample proportion is `p(1-p)/n`
+  * The Bernoulli distribution is a special case of the binomial distribution where a single trial is conducted (so n would be 1 for such a binomial distribution).
 
 ## Multiple Comparisons
 
@@ -227,6 +228,7 @@ The standard deviation calculated with a divisor of n−1 is a standard deviatio
 * [Wikipedia: Type I and type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
 * [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+* [Wikipedia: Bernoulli Distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution)
 * [Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction)
 * [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
 * [PSU: STAT 800](https://online.stat.psu.edu/stat800/)
