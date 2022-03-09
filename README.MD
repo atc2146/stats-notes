@@ -23,6 +23,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Normal Distribution](#normal-distribution)
   * [Bernoulli Distribution](#bernoulli-distribution)
 * [Multiple Comparisons](#multiple-comparisons)
+  * [Bonferroni correction](#bonferroni-correction)
 * [Machine Learning](#machine-learning)
   * [L1 and L2 Norm](#l1-and-l2-norm)
   * [Linear Regression](#linear-regression)
@@ -165,6 +166,8 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ## Multiple Comparisons
 
+### Bonferonni Correction
+
 ## Machine Learning
 
 ### L1 and L2 Norm
@@ -222,18 +225,20 @@ In statistics, [Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_co
 The standard deviation calculated with a divisor of n−1 is a standard deviation calculated from the sample as an estimate of the standard deviation of the population from which the sample was drawn. Because the observed values fall, on average, closer to the sample mean than to the population mean, the standard deviation which is calculated using deviations from the sample mean underestimates the desired standard deviation of the population. Using `n − 1` instead of `n` as the divisor corrects for that by making the result a little bit bigger.
 
 ## References
+* [Wikipedia: Bernoulli Distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution)
+* [Wikipedia: Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction)
+* [Wikipedia: Bonferroni Correction](https://en.wikipedia.org/wiki/Bonferroni_correction)
+* [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Wikipedia: Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
+* [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
 * [Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
 * [Wikipedia: Type I and type II errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
-* [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
-* [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
-* [Wikipedia: Bernoulli Distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution)
-* [Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction)
-* [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
-* [PSU: STAT 800](https://online.stat.psu.edu/stat800/)
-* [Stackexchange: Intuitive explanation for dividing by n−1 when calculating standard deviation?](https://stats.stackexchange.com/questions/3931/intuitive-explanation-for-dividing-by-n-1-when-calculating-standard-deviation)
 * [40 Stats Interviews Problems](https://towardsdatascience.com/40-statistics-interview-problems-and-answers-for-data-scientists-6971a02b7eee)
 * [Calculation of Variance: MOSSOM](https://www.mun.ca/biology/scarr/Simplified_calculation_of_variance.html)
 * [Practical Statistics for Data Scientists: 50 Essential Concepts](https://www.oreilly.com/library/view/practical-statistics-for/9781491952955/)
+* [PSU: STAT 800](https://online.stat.psu.edu/stat800/)
+* [Stackexchange: Intuitive explanation for dividing by n−1 when calculating standard deviation?](https://stats.stackexchange.com/questions/3931/intuitive-explanation-for-dividing-by-n-1-when-calculating-standard-deviation)
+* [Statistics How To: T-Score vs. Z-Score: What’s the Difference?](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/t-score-vs-z-score/)
 * [The Art of Statistics](https://www.goodreads.com/book/show/43722897-the-art-of-statistics)
+
