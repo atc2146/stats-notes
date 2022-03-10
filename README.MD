@@ -186,18 +186,19 @@ Why use least squares as the loss (cost) function?
 ### Trees 
 
 ## Chi-squared test
-*  Pearson's chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. Used for counts.
+*  Pearson's Chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. It is used for **counts**.
 
 Similarly, (One-way) ANOVA is used to investigate whether differences in means (for 3 or more cohorts) between samples are significant or not.  We use the F statistic.
 
-However, these are not really used in online controlled experimentation as we generally need to compare pairs of cohorts.
+However, these are not really used in online controlled experimentation as we generally need to compare **pairs** of cohorts.
 
 ## Fisher's Exact Test
 
+Fisher's exact test is a statistical significance test used in the analysis of contingency tables. Although in practice it is employed when sample sizes are small, it is valid for all sample sizes.  Fishers' Exact test is similar to the *Chi-squared test*, except the Chi-squared test uses an approximation.
 
 ## Online Controlled Experiments
 
-* **Observational** study is where observations or measurements area analyzed without manipulating any variables. These studies show that there may be a relationship but not necessarily a cause and effect relationship. 
+* **Observational** study is where observations or measurements are analyzed without manipulating any variables. These studies show that there may be a relationship but not necessarily a cause and effect (causal) relationship. 
 * **Experimental** study involves some random assignment of a treatment; researchers can draw cause and effect (or causal) conclusions.
 
 ### Variance Reduction Techniques
@@ -211,11 +212,13 @@ However, these are not really used in online controlled experimentation as we ge
 #### Winsorization
 
 ## Other
-* Positive skew has long right tail.
+* Positive skew has a long right tail.
 
 ![skew](https://upload.wikimedia.org/wikipedia/commons/c/cc/Relationship_between_mean_and_median_under_different_skewness.png)
 
-* Parameter is a number that describes the data from a **population** while a statistic is a number that describes the data from a **sample**.
+* Parameter vs. Statistic.
+  * A Parameter is a number that describes the data from a **population**. 
+  * A statistic is a number that describes the data from a **sample**.
 * Statistical and Practical Significance: Statistical significance is concerned with whether an observed effect is due to chance and practical significance means that the observed effect is large enough to be useful in the real world.
 * The covariance is simply a measure of the variance of two variables - how one moves in relation to the other.
 
@@ -230,6 +233,7 @@ The standard deviation calculated with a divisor of n−1 is a standard deviatio
 * [Wikipedia: Bonferroni Correction](https://en.wikipedia.org/wiki/Bonferroni_correction)
 * [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Wikipedia: Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
+* [Wikipedia: Fisher's Exact Test](https://en.wikipedia.org/wiki/Fisher%27s_exact_test)
 * [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
 * [Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
