@@ -29,6 +29,9 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Linear Regression](#linear-regression)
   * [Logistic Regression](#logistic-regression)
   * [Trees](#trees)
+    * [Bagging](#bagging)
+    * [Boosting](#boosting)
+  * [Support Vector Machines](#support-vector-machines)
 * [Online Controlled Experiments](#online-controlled-experiments)
   * [Variance Reduction Techniques](#variance-reduction-techniques)
 * [Chi-squared test](#chi-squared-test)
@@ -184,6 +187,14 @@ Why use least squares as the loss (cost) function?
 ### Logistic Regression
 
 ### Trees 
+
+#### Bagging
+
+#### Boosting
+
+
+### Support Vector Machines
+
 
 ## Chi-squared test
 *  Pearson's Chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. It is used for **counts**.
