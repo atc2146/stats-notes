@@ -214,9 +214,12 @@ Fisher's exact test is a statistical significance test used in the analysis of c
 
 ### Variance Reduction Techniques
 
-#### CUPED
+* CUPED
 * CUPAC (Doordash)
 * VWE (Facebook)
+
+#### CUPED
+
 
 #### Stratification
 
