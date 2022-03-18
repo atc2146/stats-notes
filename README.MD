@@ -32,6 +32,7 @@ Notes and references for Statistics. Taken from various places on the internet.
     * [Bagging](#bagging)
     * [Boosting](#boosting)
   * [Support Vector Machines](#support-vector-machines)
+  * [Deep Learning](#deep-learning)
 * [Online Controlled Experiments](#online-controlled-experiments)
   * [Variance Reduction Techniques](#variance-reduction-techniques)
 * [Chi-squared test](#chi-squared-test)
@@ -137,7 +138,6 @@ However, as the samples gets large (n > 30), the difference between the z-statis
     * The **unpooled version** is that the test is more conservative making it marginally more difficult to reject the null.
     * The **pooled version** is a potentially **incorrect** model. 
 
-
 ## Central Limit Theorem
 
 * In probability theory, the [Central Limit Theorem](https://www.youtube.com/watch?v=JNm3M9cqWyc&ab_channel=KhanAcademy) (CLT) establishes that, in many situations, when independent random variables are summed up, their properly *normalized* sum tends toward a normal distribution (informally a bell curve) even if the original variables themselves are not normally distributed.
@@ -195,6 +195,7 @@ Why use least squares as the loss (cost) function?
 
 ### Support Vector Machines
 
+### Deep Learning
 
 ## Chi-squared test
 *  Pearson's Chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. It is used for **counts**.
