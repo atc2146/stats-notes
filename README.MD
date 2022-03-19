@@ -35,6 +35,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Deep Learning](#deep-learning)
 * [Online Controlled Experiments](#online-controlled-experiments)
   * [Variance Reduction Techniques](#variance-reduction-techniques)
+* [Resampling Methods](#resampling-methods)
 * [Chi-squared test](#chi-squared-test)
 * [Fisher's Exact test](#fishers-exact-test)
 * [Other](#other)
@@ -196,6 +197,8 @@ Why use least squares as the loss (cost) function?
 ### Support Vector Machines
 
 ### Deep Learning
+
+## Resampling Methods
 
 ## Chi-squared test
 *  Pearson's Chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. It is used for **counts**.
