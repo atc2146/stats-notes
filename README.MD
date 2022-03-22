@@ -21,6 +21,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Standard Error of the Mean](#standard-error-of-the-mean)
 * [Distributions](#distributions)
   * [Normal Distribution](#normal-distribution)
+  * [Uniform Distribution](#uniform-distribution)
   * [Bernoulli Distribution](#bernoulli-distribution)
 * [Multiple Comparisons](#multiple-comparisons)
   * [Bonferroni correction](#bonferroni-correction)
@@ -159,6 +160,8 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 * A good rule of thumb is the 68-95-99.7 rule in that respectively 68%, 95%, and 99.7% of observations will fall within 1, 2, and 3 standard deviations from the mean.
 * We can convert any normal distribution into the **standard normal distribution** in order to find probability and apply the properties of the standard normal. In order to do this, we use the z-value.
   * The Z-value (or sometimes referred to as Z-score or simply Z) represents the number of standard deviations an observation is from the mean for a set of data. To find the z-score for a particular observation we apply the following formula: `(observed value - mean) / SD`
+
+### Uniform Distribution
 
 ### Bernoulli Distribution
 
