@@ -87,9 +87,9 @@ Here's a summary table:
 In statistical hypothesis testing,
 
 * A **Type I error** is the mistaken rejection of an actually true null hypothesis (also known as a "false positive" finding or conclusion)
-    * Example: "an innocent person is convicted")
+    * Example: "an innocent person is convicted"
 * A **Type II error** is the mistaken acceptance of an actually false null hypothesis (also known as a "false negative" finding or conclusion)
-    * Example: "a guilty person is not convicted").
+    * Example: "a guilty person is not convicted".
 
 
 ### p-value
@@ -120,6 +120,8 @@ At a minimum, power nearly always depends on the following three factors:
   * For a **given** CI, either the true parameter is in it or it is not!
 
 ### Prediction Intervals
+
+TBA
 
 ### T-statistic vs Z-statistic
 
@@ -221,7 +223,7 @@ Fisher's exact test is a statistical significance test used in the analysis of c
 
 ### Variance Reduction Techniques
 
-* CUPED
+* CUPED: Controlled-experiment Using Pre-Experiment Data
 * CUPAC (Doordash)
 * VWE (Facebook)
 
