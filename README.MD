@@ -26,6 +26,7 @@ Notes and references for Statistics. Taken from various places on the internet.
 * [Multiple Comparisons](#multiple-comparisons)
   * [Bonferroni correction](#bonferroni-correction)
 * [Machine Learning](#machine-learning)
+  * [Bias Variance Tradeoff](#bias-variance-tradeoff)
   * [L1 and L2 Norm](#l1-and-l2-norm)
   * [Linear Regression](#linear-regression)
   * [Logistic Regression](#logistic-regression)
@@ -179,6 +180,14 @@ However, as the samples gets large (n > 30), the difference between the z-statis
 
 ## Machine Learning
 
+### Bias Variance Tradeoff
+
+* In general, as we increase the number of tunable parameters in a model, it becomes more flexible, and can better fit a training data set. It is said to have lower error, or bias. However, for more flexible models, there will tend to be greater variance to the model fit each time we take a set of samples to create a new training data set. It is said that there is greater variance in the model's estimated parameters.
+* High Bias is equivalent to model underfitting the training data.
+* High Variance is equivalent to the model overfitting training data. That is, it performs well on training data but poorly on new data.
+
+Some ways to reduce bias and variance include: Cross validation, ensemble methods, feature selection, regularization, etc.
+
 ### L1 and L2 Norm
 
 ### Linear Regression
@@ -253,6 +262,7 @@ The standard deviation calculated with a divisor of `n − 1` is a standard devi
 ## References
 * [Wikipedia: Bernoulli Distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution)
 * [Wikipedia: Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction)
+* [Wikipedia: Bias-variance Tradeoff](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)
 * [Wikipedia: Bonferroni Correction](https://en.wikipedia.org/wiki/Bonferroni_correction)
 * [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Wikipedia: Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
