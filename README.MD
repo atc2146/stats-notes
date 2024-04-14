@@ -1,6 +1,6 @@
 # Statistics Notes
 
-Notes and references for Statistics. Taken from various places on the internet.
+Notes and references for Statistics. Taken from various places on the internet. For educational use only.
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Uniform Distribution](#uniform-distribution)
   * [Bernoulli Distribution](#bernoulli-distribution)
 * [Multiple Comparisons](#multiple-comparisons)
-  * [Bonferroni correction](#bonferroni-correction)
+  * [Bonferroni Correction](#bonferroni-correction)
 * [Machine Learning](#machine-learning)
   * [Bias Variance Tradeoff](#bias-variance-tradeoff)
   * [L1 and L2 Norm](#l1-and-l2-norm)
@@ -37,11 +37,13 @@ Notes and references for Statistics. Taken from various places on the internet.
   * [Deep Learning](#deep-learning)
 * [Online Controlled Experiments](#online-controlled-experiments)
   * [Variance Reduction Techniques](#variance-reduction-techniques)
+* [Causal Inference](#causal-inference)
+  * [Propensity Score Matching](#propensity-score-matching)
 * [Resampling Methods](#resampling-methods)
-* [Chi-squared test](#chi-squared-test)
+* [Chi-Squared Test](#chi-squared-test)
 * [Fisher's Exact test](#fishers-exact-test)
 * [Other](#other)
-  * [Bessel's correction](#Bessels-correction)
+  * [Bessel's Correction](#Bessels-correction)
 * [References](#references)
 
 ## Overview
@@ -214,8 +216,8 @@ Why use least squares as the loss (cost) function?
 
 ## Resampling Methods
 
-## Chi-squared test
-*  Pearson's Chi-squared test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. It is used for **counts**.
+## Chi-Squared Test
+Pearson's Chi-Squared Test is used to determine whether there is a statistically significant difference between the expected frequencies and the observed frequencies in one or more categories of a contingency table. It is used for **counts**.
 
 Similarly, (One-way) ANOVA is used to investigate whether differences in means (for 3 or more cohorts) between samples are significant or not.  We use the F statistic.
 
@@ -223,7 +225,7 @@ However, these are not really used in online controlled experimentation as we ge
 
 ## Fisher's Exact Test
 
-Fisher's exact test is a statistical significance test used in the analysis of contingency tables. Although in practice it is employed when sample sizes are small, it is valid for all sample sizes.  Fishers' Exact test is similar to the *Chi-squared test*, except the Chi-squared test uses an approximation.
+(Fisher's Exact Test)[(https://en.wikipedia.org/wiki/Fisher%27s_exact_test)] is a statistical significance test used in the analysis of contingency tables. Although in practice it is employed when sample sizes are small, it is valid for all sample sizes.  Fishers' Exact test is similar to the *Chi-squared test*, except the Chi-squared test uses an approximation.
 
 ## Online Controlled Experiments
 
@@ -243,19 +245,29 @@ Fisher's exact test is a statistical significance test used in the analysis of c
 
 #### Winsorization
 
+
+## Causal Inference
+
+* TBA
+
+### Propensity Score Matching
+
+* TBA
+
+
 ## Other
 * Positive skew has a long right tail.
 
 ![skew](https://upload.wikimedia.org/wikipedia/commons/c/cc/Relationship_between_mean_and_median_under_different_skewness.png)
 
 * Parameter vs. Statistic.
-  * A Parameter is a number that describes the data from a **population**. 
+  * A parameter is a number that describes the data from a **population**. 
   * A statistic is a number that describes the data from a **sample**.
 * Statistical and Practical Significance: Statistical significance is concerned with whether an observed effect is due to chance and practical significance means that the observed effect is large enough to be useful in the real world.
-* The covariance is simply a measure of the variance of two variables - how one moves in relation to the other.
+* The covariance is a measure of the variance of two random variables - how one moves in relation to the other.
 
-### Bessel's correction
-In statistics, [Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction) is the use of `n − 1` instead of `n` in the formula for the sample variance and sample standard deviation, where `n` is the number of observations in a sample. This method corrects the bias in the estimation of the population variance. It also partially corrects the bias in the estimation of the population standard deviation. However, the correction often increases the mean squared error in these estimations. 
+### Bessel's Correction
+In statistics, [Bessel's Correction](https://en.wikipedia.org/wiki/Bessel%27s_correction) is the use of `n − 1` instead of `n` in the formula for the sample variance and sample standard deviation, where `n` is the number of observations in a sample. This method corrects the bias in the estimation of the population variance. It also partially corrects the bias in the estimation of the population standard deviation. However, the correction often increases the mean squared error in these estimations. 
 
 The standard deviation calculated with a divisor of `n − 1` is a standard deviation calculated from the sample as an estimate of the standard deviation of the population from which the sample was drawn. Because the observed values fall, on average, closer to the sample mean than to the population mean, the standard deviation which is calculated using deviations from the sample mean underestimates the desired standard deviation of the population. Using `n − 1` instead of `n` as the divisor corrects for that by making the result a little bit bigger.
 
