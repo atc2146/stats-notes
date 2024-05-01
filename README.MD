@@ -225,7 +225,7 @@ However, these are not really used in online controlled experimentation as we ge
 
 ## Fisher's Exact Test
 
-(Fisher's Exact Test)[(https://en.wikipedia.org/wiki/Fisher%27s_exact_test)] is a statistical significance test used in the analysis of contingency tables. Although in practice it is employed when sample sizes are small, it is valid for all sample sizes.  Fishers' Exact test is similar to the *Chi-squared test*, except the Chi-squared test uses an approximation.
+(Fisher's Exact Test)[https://en.wikipedia.org/wiki/Fisher%27s_exact_test] is a statistical significance test used in the analysis of contingency tables. Although in practice it is employed when sample sizes are small, it is valid for all sample sizes.  Fishers' Exact test is similar to the *Chi-squared test*, except the Chi-squared test uses an approximation.
 
 ## Online Controlled Experiments
 
