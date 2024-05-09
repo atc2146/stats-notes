@@ -62,7 +62,7 @@ Notes and references for Statistics. Taken from various places on the internet. 
   * `P(B|A)` is a conditional probability: the probability of event B occurring given that A is true.
   * `P(A)` and `P(B)` are the probabilities of observing A and B respectively without any given conditions; they are known as the marginal probability or prior probability.
 
-
+This [blog](https://thestatsninja.com/2019/03/03/how-to-decipher-false-positives-and-negatives-with-bayes-theorem/) has some good examples and further explanation.
 
 ## Null Hypothesis Significance Testing (NHST)
 
