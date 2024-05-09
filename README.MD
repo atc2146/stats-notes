@@ -6,7 +6,6 @@ Notes and references for Statistics. Taken from various places on the internet. 
 
 * [Overview](#overview)
 * [Fundamentals](#fundamentals)
-  * [Law of Large Numbers](#law-of-large-numbers)
 * [Bayes Theorem](#bayes-theorem)
 * [Null Hypothesis Significance Testing (NHST)](#null-hypothesis-significance-testing-nhst)
   * [Notation](#notation)
@@ -17,6 +16,7 @@ Notes and references for Statistics. Taken from various places on the internet. 
   * [Prediction Intervals](#prediction-intervals)
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
   * [Hypothesis Testing for Two-Sample Means](hypothesis-testing-for-two-sample-means)
+* [Law of Large Numbers](#law-of-large-numbers)
 * [Central Limit Theorem](#central-limit-theorem)
   * [Standard Error of the Mean](#standard-error-of-the-mean)
 * [Distributions](#distributions)
@@ -53,8 +53,6 @@ Notes and references for Statistics. Taken from various places on the internet. 
   * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1).
       * Note, there is an [alternative formula](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance) where you do not need to calculate the mean.
   * Standard deviation is the square root of variance.
-
-### Law of Large Numbers
 
 
 ## Bayes Theorem
@@ -144,6 +142,9 @@ However, as the samples gets large (n > 30), the difference between the z-statis
   * The consequence of using:
     * The **unpooled version** is that the test is more conservative making it marginally more difficult to reject the null.
     * The **pooled version** is a potentially **incorrect** model. 
+
+## Law of Large Numbers
+In probability theory, the law of large numbers (LLN) is a mathematical theorem that states that the average of the results obtained from a large number of independent and identical random samples converges to the true value, if it exists. More formally, the LLN states that given a sample of independent and identically distributed values, the sample mean converges to the true mean.
 
 ## Central Limit Theorem
 
@@ -279,6 +280,7 @@ The standard deviation calculated with a divisor of `n − 1` is a standard devi
 * [Wikipedia: Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)
 * [Wikipedia: Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test)
 * [Wikipedia: Fisher's Exact Test](https://en.wikipedia.org/wiki/Fisher%27s_exact_test)
+* [Wikipedia: Law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers)
 * [Wikipedia: Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 * [Wikipedia: p-value](https://en.wikipedia.org/wiki/P-value)
 * [Wikipedia: Power of a Test](https://en.wikipedia.org/wiki/Power_of_a_test)
