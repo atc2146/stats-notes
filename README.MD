@@ -111,7 +111,7 @@ The statistical **power** of a binary hypothesis test is the probability that th
 
 Statistical power ranges from 0 to 1, and as the power of a test increases, the probability &beta; of making a type II error by wrongly failing to reject the null hypothesis decreases.
 
-At a minimum, power nearly always depends on the following three factors:
+Power nearly always depends on the following factors:
 
 1. The **statistical significance criterion** used in the test (&alpha;).
    * One easy way to increase the power of a test is to carry out a less conservative test by using a larger significance criterion, for example 0.10 instead of 0.05.  This increases the chance of rejecting the null hypothesis (obtaining a statistically significant result) when the null hypothesis is false; that is, it reduces the risk of a type II error (false negative regarding whether an effect exists). But it also increases the risk of obtaining a statistically significant result (rejecting the null hypothesis) when the null hypothesis is not false; that is, it increases the risk of a type I error (false positive).
@@ -201,7 +201,7 @@ $$\text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{
 * **When to use:**
     * You need a balance between Precision and Recall.
     * There is an uneven class distribution (imbalanced data).
-* **Note:** F1 treats Precision and Recall as equally important.
+* **Note:** F1 treats Precision and Recall as equally important. There is a F-Beta score that has another parameter Beta where you can adjust the importance of precision vs recall.
 
 ---
 
