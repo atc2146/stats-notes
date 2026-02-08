@@ -1,6 +1,6 @@
 # Statistics Notes
 
-Notes and references for Statistics. Taken from various places on the internet. For educational use only.
+Notes and references for Statistics. Taken from various places on the internet. For educational and non-commerical use only.
 
 ## Table of Contents
 
@@ -15,7 +15,14 @@ Notes and references for Statistics. Taken from various places on the internet. 
   * [Confidence Intervals](#confidence-intervals)
   * [Prediction Intervals](#prediction-intervals)
   * [T-statistic vs Z-statistic](#t-statistic-vs-z-statistic)
-  * [Hypothesis Testing for Two-Sample Means](hypothesis-testing-for-two-sample-means)
+  * [Hypothesis Testing for Two-Sample Means](#hypothesis-testing-for-two-sample-means)
+* [Classification Metrics](#classification-metrics)
+  * [Confusion Matrix](#confusion-matrix)
+  * [Accuracy](#accuracy)
+  * [Precision](#precision)
+  * [Recall](#recall)
+  * [F1 Score](#f1-score)
+  * [Summary Table](#summary-table)
 * [Law of Large Numbers](#law-of-large-numbers)
 * [Central Limit Theorem](#central-limit-theorem)
   * [Standard Error of the Mean](#standard-error-of-the-mean)
@@ -108,10 +115,13 @@ At a minimum, power nearly always depends on the following three factors:
 
 1. The **statistical significance criterion** used in the test (&alpha;).
    * One easy way to increase the power of a test is to carry out a less conservative test by using a larger significance criterion, for example 0.10 instead of 0.05.  This increases the chance of rejecting the null hypothesis (obtaining a statistically significant result) when the null hypothesis is false; that is, it reduces the risk of a type II error (false negative regarding whether an effect exists). But it also increases the risk of obtaining a statistically significant result (rejecting the null hypothesis) when the null hypothesis is not false; that is, it increases the risk of a type I error (false positive).
-2. The **magnitude of the effect** of interest in the population.
+2. The **effect size** or **magnitude of the effect** of interest in the population.
+   * Larger effect sizes are easier to detect, leading to higher power. Conversely, finding very subtle differences requires massive amounts of data (high power).
 3. The **sample size** used to detect the effect.
    * The sample size determines the amount of sampling error inherent in a test result. Other things being equal, effects are harder to detect in smaller samples. Increasing sample size is often the easiest way to boost the statistical power of a test.
-
+4. The **variability** in the sample: Decreasing variability (noise) increases power. You can often reduce variability by refining your measurement tools or controlling extraneous variables in an experiment.
+   * For example, you can refine you inclusion criteria, use "Within-Subjects" Design (Paired Testing) which means you measure the same subject but at different intervals, improve measurement metrics, or control for confounding varibles using things like CUPED.
+   
 ### Confidence Intervals
 
 * General form of a confidence interval: `(sample statistic) +- (margin of error)`.
@@ -142,6 +152,67 @@ However, as the samples gets large (n > 30), the difference between the z-statis
   * The consequence of using:
     * The **unpooled version** is that the test is more conservative making it marginally more difficult to reject the null.
     * The **pooled version** is a potentially **incorrect** model. 
+
+## Classification Metrics
+
+### The Confusion Matrix
+Before calculating metrics, understand the four possible outcomes:
+
+|                    | **Predicted Negative** (0) | **Predicted Positive** (1) |
+| :---               | :---:                      | :---:                      |
+| **Actual Negative** (0) | **TN** (True Negative)     | **FP** (False Positive) *Type I Error* |
+| **Actual Positive** (1) | **FN** (False Negative) *Type II Error* | **TP** (True Positive)     |
+
+---
+
+### 1. Accuracy
+**Definition:** The ratio of correctly predicted observations to the total observations.
+
+$$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$$
+
+* **When to use:** ONLY when the dataset is **perfectly balanced** (e.g., 50% spam, 50% ham).
+* **Pitfall:** The **"Accuracy Paradox."** In imbalanced datasets (e.g., 99% benign, 1% fraud), a model that predicts "All Benign" has 99% accuracy but is useless.
+
+### 2. Precision (Positive Predictive Value)
+**Definition:** Out of all the instances the model *predicted* as positive, how many were actually positive?
+
+$$\text{Precision} = \frac{TP}{TP + FP}$$
+
+* **Focus:** Quality of the positive result.
+* **Motto:** "Don't cry wolf."
+* **When to prioritize:** The cost of a **False Positive** is high.
+    * *Example:* Spam filters (don't send real email to spam), YouTube recommendations (don't show bad videos).
+
+### 3. Recall (Sensitivity / True Positive Rate)
+**Definition:** Out of all the *actual* positive instances, how many did the model correctly identify?
+
+$$\text{Recall} = \frac{TP}{TP + FN}$$
+
+* **Focus:** Quantity of positives found.
+* **Motto:** "Don't miss anything."
+* **When to prioritize:** The cost of a **False Negative** is high.
+    * *Example:* Cancer screening (better to scare a healthy person than miss a sick one), Fraud detection (don't let the money leave).
+
+### 4. F1 Score
+**Definition:** The harmonic mean of Precision and Recall. It creates a single metric that punishes extreme values (e.g., having 100% Recall but 1% Precision).
+
+$$\text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$
+
+* **When to use:**
+    * You need a balance between Precision and Recall.
+    * There is an uneven class distribution (imbalanced data).
+* **Note:** F1 treats Precision and Recall as equally important.
+
+---
+
+### Summary Table
+
+| Metric | Question it Answers | Good for... | Bad for... |
+| :--- | :--- | :--- | :--- |
+| **Accuracy** | "How often is the model correct?" | Balanced classes | Imbalanced classes (Fraud, Rare disease) |
+| **Precision** | "Of the ones labeled positive, how many are actually positive?" | Minimizing False Positives (Spam) | Ignoring missed cases (False Negatives) |
+| **Recall** | "Of all the actual positives, how many did we find?" | Minimizing False Negatives (Cancer) | Generating too many False Alarms |
+| **F1 Score** | "What is the balance between Precision and Recall?" | Imbalanced classes; General comparison | Business cases where one error is much worse than the other |
 
 ## Law of Large Numbers
 In probability theory, the law of large numbers (LLN) is a mathematical theorem that states that the average of the results obtained from a large number of independent and identical random samples converges to the true value, if it exists. More formally, the LLN states that given a sample of independent and identically distributed values, the sample mean converges to the true mean.
@@ -252,6 +323,10 @@ However, these are not really used in online controlled experimentation as we ge
 * TBA
 
 ### Propensity Score Matching
+
+* TBA
+
+### Double ML
 
 * TBA
 
