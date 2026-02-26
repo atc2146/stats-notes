@@ -5,7 +5,7 @@ Notes and references for Statistics. Taken from various places on the internet. 
 ## Table of Contents
 
 * [Overview](#overview)
-* [Fundamentals](#fundamentals)
+* [Variance](#variance)
 * [Bayes Theorem](#bayes-theorem)
 * [Null Hypothesis Significance Testing (NHST)](#null-hypothesis-significance-testing-nhst)
   * [Notation](#notation)
@@ -55,9 +55,9 @@ Notes and references for Statistics. Taken from various places on the internet. 
 
 ## Overview
 
-## Fundamentals
+## Variance
 * Variance is a measure of spread.
-  * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1).
+  * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1). We divide by n-1, to provide an unbiased estimated of the population variance. This is known as Bessel's correction.
       * Note, there is an [alternative formula](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance) where you do not need to calculate the mean.
   * Standard deviation is the square root of variance.
 
