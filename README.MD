@@ -57,7 +57,7 @@ Notes and references for Statistics. Taken from various places on the internet. 
 
 ## Variance
 * Variance is a measure of spread.
-  * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1). We divide by n-1, to provide an unbiased estimated of the population variance. This is known as Bessel's correction.
+  * The sample variance is calculated as the (sum of squared deviations) divided by (n - 1). We divide by n-1, to provide an unbiased estimated of the population variance. This is known as [Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction).
       * Note, there is an [alternative formula](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance) where you do not need to calculate the mean.
   * Standard deviation is the square root of variance.
 
@@ -88,7 +88,7 @@ Here's a summary table:
 
 |  | Null hypothesis is True | Null hypothesis is False |
 | --- | --- | --- |
-| **Result: don't reject null hypothesis** | Correct inference<br/> (true negative)<br/> (probability = 1−&alpha;) | Type II error<br/> (false negative)<br/> (probability = &beta;) |
+| **Result: fail to reject null hypothesis** | Correct inference<br/> (true negative)<br/> (probability = 1−&alpha;) | Type II error<br/> (false negative)<br/> (probability = &beta;) |
 | **Result: reject null hypothesis** | Type I error<br/> (false positive)<br/> (probability = &alpha;)  | Correct inference<br/> (true positive)<br/> (probability = 1−&beta;) |
 
 ### Type I and Type II Errors
